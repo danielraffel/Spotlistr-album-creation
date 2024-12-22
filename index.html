@@ -127,12 +127,28 @@
 </head>
 <body>
     <div class="container">
+		
+		<p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; background: #e8f5e9; padding: 1rem; border-radius: 4px;">
+		    <b>What is this?</b> Turning end-of-year album lists into Spotify playlists is no longer a hassle! Thanks to <a href="http://spotlistr.com" target="_blank">Spotlistr</a> and this tool I created using <a href="http://claude.ai" target="_blank">Claude</a>, you can convert album - artist lists into a list of Spotify album URLs. Spotlistr can then use these URLs to generate a Spotify playlist featuring all the tracks from each respective album.
+		</p>
+		
         <h1>Spotify Album ID Converter</h1>
+		
+        <h3>How to Use</h3>
+        <ol>
+			<li>Create a Spotify app and paste your clientID and secret into step 1. Press authenticate.
+            <li>Enter your album URLs or artist - album names below</li>
+            <li>Click Convert to generate Spotify album IDs</li>
+            <li>Click Copy to copy the generated IDs</li>
+            <li>Go to <a href="https://www.spotlistr.com/search/textbox" target="_blank">Spotlistr's textbox search</a></li>
+            <li>Paste the copied IDs into Spotlistr's textbox</li>
+            <li>Click Search on Spotlistr to create your playlist!</li>
+        </ol>
         
         <div class="auth-section">
             <h3>Step 1: Spotify API Configuration</h3>
             <p>To enable artist/album name search, you need to provide your Spotify API credentials. 
-               Get them from the <a href="https://developer.spotify.com/dashboard" target="_blank">Spotify Developer Dashboard</a>.</p>
+               Get them from the <a href="https://developer.spotify.com/dashboard" target="_blank">Spotify Developer Dashboard</a>. Simply register to use the Web API and set the redirect URI to localhost.</p>
             
             <input type="text" id="clientId" placeholder="Enter your Spotify Client ID" />
             <input type="text" id="clientSecret" placeholder="Enter your Spotify Client Secret" />
@@ -160,17 +176,6 @@
             </div>
         </div>
         
-        <div class="workflow-steps">
-            <h3>How to Use with Spotlistr</h3>
-            <ol>
-                <li>Enter your album URLs or artist - album names above</li>
-                <li>Click Convert to generate Spotify album IDs</li>
-                <li>Click Copy to copy the generated IDs</li>
-                <li>Go to <a href="https://www.spotlistr.com/search/textbox" target="_blank">Spotlistr's textbox search</a></li>
-                <li>Paste the copied IDs into Spotlistr's textbox</li>
-                <li>Click Search on Spotlistr to create your playlist!</li>
-            </ol>
-        </div>
     </div>
 
     <script>
